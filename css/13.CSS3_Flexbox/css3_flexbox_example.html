@@ -6,25 +6,32 @@
   <title>Flexbox 연습</title>
 
   <style>
-    #flex-container{
+    #flex-container {
       width: 800px;
       height: 800px;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0, 0, 0, 0.15);
       display: flex;
+      /*flex-direction : column*/
       flex-direction: row;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
+      gap: 8px;
     }
 
-    .flex-item{
+
+    .flex-item {
       width: 100px;
       height: 100px;
-      border: 1px solid black;
-      background-color: rgba(255,0,0,0.5);
+      background-color: rgba(0, 0, 255, 0.5);
+      /*margin-left: 8px;*/
       font-size: 24px;
       font-weight: 900;
+      border: 1px solid black;
+      flex-grow: 1;
     }
+    /* .flex-item:first-child {
+      margin-left: 0px;
+    } */
   </style>
 
 
@@ -34,7 +41,6 @@
     <div class="flex-item">1</div>
     <div class="flex-item">2</div>
     <div class="flex-item">3</div>
-    <div class="flex-item">4</div>
   </div>
 </body>
 </html>
