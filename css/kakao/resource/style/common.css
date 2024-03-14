@@ -1,0 +1,215 @@
+
+@font-face {
+  font-family: "KakaoRegular";
+  src: url(../font/KakaoRegular.ttf);
+}
+
+@font-face {
+  font-family: "KakaoBold";
+  src: url(../font/KakaoBold.ttf);
+}
+
+/* .kakao-regular-font {
+  font-family: "KakaoRegular";
+}
+
+.kakao-bold-font {
+  font-family: "KakaoBold";
+} */
+
+* {
+  font-family: KakaoRegular, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  min-width: 1712px;
+}
+
+#wrapper{
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  width: 1712px;
+}
+
+.title-box{
+  font-size: 52px;
+  line-height: 78px;
+  letter-spacing: -1px;
+  font-family: KakaoBold, sans-serif;
+  font-weight: 400;
+}
+
+.title-box::before{
+  background-image: url(https://www.kakaocorp.com/page/ico_tit_service.gif);
+  width: 78px;
+  height: 78px;
+  display: inline-block;
+  content: "";
+  background-size: 100%;
+  vertical-align: top;
+}
+
+/* Contents Box */
+.contents-box{
+  display: grid;
+  grid-template: 
+    "communication business" 180px
+    "life-style shopping" 180px
+    "entertainment social" 180px
+    /1fr 1fr;
+  gap: 16px;
+}
+
+.content-card{
+  background-color: rgba(240,240,240,1);
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 64px;
+}
+
+.content-title{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.content-icons-box{
+  display: flex;
+  gap: 12px;
+  
+}
+
+.icron-button{
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background-size: 100%;
+}
+
+.icron-button:hover{
+  cursor: pointer;
+}
+
+.more{
+  background-color: rgba(0,0,0,0.4);
+  color: rgba(255,255,255,1);
+  text-align: center;
+  line-height: 56px;
+  font-size: 50px;
+}
+
+.more:hover{
+  background-color: rgba(0,0,0,1);
+}
+
+.kakaotalk{
+  background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9424536018c00001.png');
+}
+
+.daum{
+  background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9425290018c00001.png');
+}
+
+.story{
+  background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c942653a018c00001.png');
+}
+
+.kakaotalk-channel{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9468d8a018c00001.png");
+}
+
+.kakaotalk-cloud{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9469d4a018c00001.png");
+}
+
+.link-service{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c946aa55018c00001.png");
+}
+
+.kakao-map{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c947f606018c00001.png");
+}
+
+.kakao-T{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94804d8018c00001.png");
+}
+
+.kakaobank{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9481249018c00001.png");
+}
+
+.kakao-gift{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94a2627018c00001.png");
+}
+
+.kakao-shopping{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94a89d4018c00001.png");
+}
+
+.zigzag{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94a96f9018c00001.png");
+}
+
+.kakao-page{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94b668f018c00001.png");
+}
+
+.piccoma{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94b7687018c00001.png");
+}
+
+.melon{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94b83e3018c00001.png");
+}
+
+.together{
+  background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94c09cc018c00001.png");
+}
+
+/* More Box */
+.more-box{
+  display: flex;
+  justify-content: center;
+}
+
+.more-button{
+  width: 316px;
+  height: 76px;
+  background-color: rgba(240,240,240,1);
+  font-size: 24px;
+  letter-spacing: -0.4px;
+  border-radius: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4px;
+}
+
+.more-button:hover{
+  cursor: pointer;
+}
+
+.round-black{
+  width: 24px;
+  height: 24px;
+  background-color: rgba(0,0,0,1);
+  color: rgba(255,255,255,1);
+  display: block;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.more-button:hover.round-black{
+  background-color: rgba(0,0,0,0.5);
+}
