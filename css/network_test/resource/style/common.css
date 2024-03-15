@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "KakakoRegular";
+  src: url(../font/KakaoRegular.ttf);
+}
+
+@font-face {
+  font-family: "KakaoBold";
+  src: url(../font/KakaoBold.ttf);
+}
+
+*{
+  font-family: KakaoRegular, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+#wrapper {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.news-box-1,
+.news-box-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  top: 12px;
+}
+
+.news-box-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  top: 12px;
+}
+
+.content-card-1 {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 160px;
+  padding-left: 48px;
+  padding-right: 48px;
+  justify-content: space-between;
+  background-color: rgba(240, 240, 240, 1);
+  border-radius: 24px;
+  position: relative;
+}
+
+.content-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 36px;
+  position: absolute;
+  top: 24px;
+}
+
+.content-bar::before {
+  background-image: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png);
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-size: 100%;
+  margin-right: 8px;
+  content: "";
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "KakaoRegular";
+}
+
+.bar-title {
+  padding: 8px 12px;
+  margin-right: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.bar-date {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 8px;
+}
+
+.content-card-2 {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  padding-left: 48px;
+  padding-right: 48px;
+  justify-content: space-between;
+  background-color: rgba(240, 240, 240, 1);
+  border-radius: 24px;
+  position: relative;
+}
+
+.arrow {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+
+.dot{
+  background-image: url(https://cdn-icons-png.flaticon.com/512/64/64576.png);
+  width: 12px;
+  height: 12px;
+  background-size: 100%;
+  margin-left : 400px;
+}
+.more {
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 2px;
+}
