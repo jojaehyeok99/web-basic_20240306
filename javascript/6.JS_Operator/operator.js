@@ -110,14 +110,14 @@ result = --single;
 */
 const number = 9;
 // const result2 = number % 2 === 0 ? '짝수' : '홀수'; 
-// const result2 = number % 2 ? '홀수' : '짝수'; // 위의 조건식을 간결하게 쓸 때
+// let result2 = number % 2 ? '홀수' : '짝수'; // 위의 조건식을 간결하게 쓸 때
 // console.log(result2);
 // if문
-// if(number%2){
-//   result2 = '홀수';
-// } else{
-//   result2 = '짝수';
-// }
+if(number%2){
+  result2 = '홀수';
+} else{
+  result2 = '짝수';
+}
 
 /*
 	삼항 연산자는 if else 문과 같은 역할을 함
