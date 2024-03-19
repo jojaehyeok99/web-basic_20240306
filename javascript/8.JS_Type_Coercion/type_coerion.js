@@ -48,32 +48,42 @@ console.log(typeof(10).toString());
 console.log('==============================');
 
 /*
-    숫자 타입으로 형변환
-    - 
-    - 
+  숫자 타입으로 형변환
+  - Number 클래스의 생성자를 new 연산자 없이 사용
+  - 문자열의 경우 parseInt(), parseFloat() 메서드 사용 가능
+  - + 단한연산자 사용 가능
 */
+console.log(Number(false));
+console.log(typeof Number(false));
 
+console.log(parseInt('10'));
+console.log(typeof parseInt('10'));
+
+console.log(parseFloat('10.8'));
+console.log(typeof parseFloat('10.8'));
+
+console.log('==============================');
+
+/*
+  불리언 타입으로 형변환
+  - Boolean 클래스의 생성자를 new 연산자 없이 사용
+  - !! 부정 논리 연산자를 두번 사용 가능
+*/
+console.log(Boolean('문자열'));
+console.log(!!'문자열');
 
 
 console.log('==============================');
 
 /*
-    불리언 타입으로 형변환
-    - 
-    - 
+  단축 평가 
+  - 논리 연산자는 논리 결과를 결정한 피 연산자의 결과를 그대로 반환
+  - true && data => data
+  - false && data => false
+  - true || data => data
+  - false || data => data
 */
+console.log('홍길동' || false);
 
-
-
-console.log('==============================');
-
-/*
-    단축 평가 
-    - 
-    - 
-    - 
-    - 
-    - 
-*/
 
 
