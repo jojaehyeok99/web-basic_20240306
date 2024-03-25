@@ -1,0 +1,147 @@
+/* 폰트 설정 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 전체 설정 */
+*{
+  margin: 0px;
+  font-family: Pretendard;
+}
+
+/* h1 폰트 설정*/
+.h1{
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 173%;
+}
+
+/* label 폰트 설정*/
+.label{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* 아이디 입력창 설정*/
+.input{
+  flex-grow: 1;
+  border: 1px solid rgba(238,238,238,1);
+  border-radius: 6px;
+  outline: none;
+  padding: 8px 16px;
+
+  background-color: rgba(255,255,255,1);
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+
+  color : rgba(35,45,66,1);
+}
+
+/* 아이디를 입력해주세요 글씨 색상 변경*/
+.input::placeholder{
+  color : rgba(138,146,166,1);
+}
+
+/* 전체 크기 설정*/
+#sign-in-wrapper{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  min-height: 1024px;
+}
+
+/* 왼쪽 이미지 설정*/
+.sign-in-image-box{
+  min-width: 830px;
+  background-image: url('./resource/image/sign-in-background.png');
+  background-size: cover;
+}
+
+/* 오른쪽 로그인 창 설정*/
+.sign-in-box{
+  flex-grow: 1;
+  min-width: 610px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-container{
+  width: 380px;
+  height: 523px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* 로그인 타이틀 설정(임대주택 가격 서비스)*/
+.sign-in-title{
+  font-size: 38px;
+  color: rgba(64,64,64,1);
+}
+
+/* */
+.sign-in-contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  width: 100%;
+}
+
+/* 아이디, 비밀번호 입력창*/
+.sign-in-input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.input-box{
+  width: 100%;
+}
+
+.input-label{
+  color : rgba(138,146,166,1);
+}
+
+/* 아이디 입력창 안 설정*/
+.input-content-box{
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  display: flex;
+  gap: 10px;
+}
+
+/* 로그인 입력 확인 메세지 설정*/
+.input-message{
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.primary{
+  color: rgba(58,87,232,1);
+}
+
+/* 로그인 정보가 일치하지 않습니다. 색상설정*/
+.error{
+  color : rgba(255,84,62,1);
+}
+
