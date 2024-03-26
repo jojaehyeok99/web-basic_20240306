@@ -1,0 +1,76 @@
+/* 전체 크기 설정*/
+#sign-in-wrapper{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  min-height: 1024px;
+}
+
+/* 왼쪽 이미지 설정*/
+.sign-in-image-box{
+  min-width: 830px;
+  background-image: url('../../resource/image/sign-in-background.png');
+  background-size: cover;
+}
+
+/* 오른쪽 로그인 창 설정*/
+.sign-in-box{
+  flex-grow: 1;
+  min-width: 610px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-container{
+  width: 380px;
+  height: 523px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* 로그인 타이틀 설정(임대주택 가격 서비스)*/
+.sign-in-title{
+  font-size: 38px;
+  color: rgba(64,64,64,1);
+}
+
+/* */
+.sign-in-contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  width: 100%;
+}
+
+/* 아이디, 비밀번호 입력창*/
+.sign-in-input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.sign-in-button-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  width: 100%;
+}
+
+.sign-in-sns-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+
+
+
