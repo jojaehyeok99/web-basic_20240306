@@ -223,3 +223,29 @@
 .error{
   color : rgba(255,84,62,1);
 }
+
+/* 로그아웃 버튼 */
+.second-button{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px 24px;
+
+  background-color: rgba(58,87,232,0.2);
+  border-radius: 6px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  color: rgba(45,66,178,1);
+}
+
+.second-button:hover{
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+/* 지역 평균 페이지 아이콘*/
